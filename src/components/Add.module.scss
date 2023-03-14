@@ -1,0 +1,41 @@
+.add {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #16805d;
+  margin-bottom: 10px;
+  label {
+    font-weight: 600;
+    color: #000;
+    font-size: 20px;
+  }
+  input {
+    display: block;
+    margin-bottom: 10px;
+    height: 25px;
+    font-size: 16px;
+  }
+  button {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #e1821d;
+    color: rgb(25, 25, 29);
+    font-size: 16px;
+    padding: 4px 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 1.5px 0px 0.75px 1.75px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    &:active {
+      box-shadow: 0.75px 0px 0.37px 0.875px rgba(0, 0, 0, 0.75);
+    }
+  }
+}
+
+input.invalid {
+  background-color: #ee6060;
+}
+label.invalid {
+  color: brown;
+}
